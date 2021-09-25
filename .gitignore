@@ -26,6 +26,8 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+bin/
+share/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -101,7 +103,7 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environments and Configurations
 .env
 .venv
 env/
@@ -109,6 +111,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+*.cfg
 
 # Spyder project settings
 .spyderproject
@@ -128,5 +131,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Data folders (excess in size mostly)
-data
+# Data folders or weights
+data/
+*weights/
